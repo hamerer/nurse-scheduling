@@ -1,0 +1,189 @@
+<div label input {
+   margin-right:100px;
+}
+body {
+    font-family:sans-serif;
+}
+
+#press-button1 {
+    margin:4px;
+    background-color:#FF0000;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button2 {
+    margin:4px;
+    background-color:#00FF00;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button3 {
+    margin:4px;
+    background-color:#0000FF;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button4 {
+    margin:4px;
+    background-color:#FFFF00;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button5 {
+    margin:4px;
+    background-color:#FF00FF;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button6 {
+    margin:4px;
+    background-color:#00FFFF;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button7 {
+    margin:4px;
+    background-color:#FFFF66;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button8 {
+    margin:4px;
+    background-color:#FF66FF;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button9 {
+    margin:4px;
+    background-color:#66FFFF;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button10 {
+    margin:4px;
+    background-color:#777700;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button11 {
+    margin:4px;
+    background-color:#770077;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button12 {
+    margin:4px;
+    background-color:#007777;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button13 {
+    margin:4px;
+    background-color:#FFA500;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button14 {
+    margin:4px;
+    background-color:#C71585;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button15 {
+    margin:4px;
+    background-color:#A52A2A;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button16 {
+    margin:4px;
+    background-color:#800000;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button17 {
+    margin:4px;
+    background-color:#008000;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#press-button18 {
+    margin:4px;
+    background-color:#808000;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#ck-button {
+    margin:4px;
+    background-color:#EFEFEF;
+    border:1px solid #000000;
+    overflow:auto;
+    float:center;
+}
+
+#ck-button:hover {
+    margin:4px;
+    background-color:#EFEFEF;
+    border:1px solid black;
+    overflow:auto;
+    float:center;
+    color:red;
+}
+
+#ck-button label {
+    float:center;
+    width:4.0em;
+}
+
+#ck-button label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+#ck-button input:checked + span {
+    background-color:#f00;
+    color:#fff;
+}
+

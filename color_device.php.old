@@ -1,0 +1,319 @@
+<html>
+<head>
+<title>設定通訊裝置顏色</title>
+</head>
+<body>
+<Left><H2  align="middle"  class="style1">設定通訊裝置顏色</H2>
+
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+
+<?php 
+session_start(); 
+include('../db.inc');
+
+echo "<form name=form method=post action=color_do_device.php>";
+
+$link=mysql_connect($dbhostname, $dbusername, $dbpassword) or die("Unable to connect to database");
+mysql_select_db($dbName,$link) or die( "Unable to select database");
+
+echo "<table border=1 width=40%>";
+
+$sql = "SELECT  color,type,name,  FROM color ";
+$result= mysql_query($sql);
+while ($rows=mysql_fetch_array($result)){
+  
+  echo "<tr>";
+  echo "<td id='red' width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#FF0000>紅色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+  echo "<td width=10%><select name=device1>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+   echo "</select>";
+  echo "</tr>";
+  
+  echo "<tr>";
+  echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#00FF00>綠色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+  echo "<td width=10%><select name=device2>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+  echo "</select>";
+  echo "</tr>";
+  
+  echo "<tr>";
+  echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#0000FF>藍色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+  echo "<td width=10%><select name=device3>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+  echo "</select>";
+  echo "</tr>";
+
+  echo "<tr>";
+ echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#FFFF00>黃色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+  echo "<td width=10%><select name=device4>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+ for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+  echo "</select>";
+  echo "</tr>";
+
+  echo "<tr>";
+  echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#FF00FF>桃紅色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+  echo "<td width=10%><select name=device5>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+  echo "</select>";
+  echo "</tr>";
+
+  echo "<tr>";
+  echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#00FFFF>淡藍色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+  echo "<td width=10%><select name=device6>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+   echo "</select>";
+   echo "</tr>";
+
+  echo "<tr>";
+  echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#FFFF66>淡黃色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+  echo "<td width=10%><select name=device7>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+  echo "</select>";
+  echo "</tr>";
+
+  echo "<tr>";
+  echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#FF66FF>米黃色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+
+  echo "<td width=10%><select name=device8>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+   echo "</select>";
+   echo "</tr>";
+
+  echo "<tr>";
+  echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#66FFFF>水藍色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+
+  echo "<td width=10%><select name=device9>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+  echo "</select>";
+  echo "</tr>";
+
+  echo "<tr>";
+  echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#777700>墨綠色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+
+  echo "<td width=10%><select name=device10>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+  echo "</select>";
+  echo "</tr>";
+
+  echo "<tr>";
+  echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#770077>紫色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+
+  echo "<td width=10%><select name=device11>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+  echo "</select>";
+  echo "</tr>";
+
+  echo "<tr>";
+  echo "<td  width=10%> ";
+  echo "顏色";
+  echo "</td>";
+  echo " <td  width=10%>";
+  echo "<font color=#007777>藍綠色</font>";
+  echo "</td>";
+  echo "<td  width=10%> ";
+  echo "裝置號碼";
+  echo "</td>";
+
+  echo "<td width=10%><select name=device12>";
+  echo '<option value="  ">'. '選擇裝置' .'</option>';
+  for ($i=1;$i<=8;$i++) {
+        echo "<option value=";
+        echo $i;
+        echo ">";
+        echo  "裝置 ";
+        echo $i;
+        echo  "</option>";
+   }
+  echo "</select>";
+  echo "</tr>";
+
+echo "</table>";
+
+mysql_close($link);
+
+echo "<tr>";
+echo "<input type=submit name=Submit value=設定><input type=reset value=取消>";
+echo "</tr>";
+echo "</form>";
+
+?>
+
+</body>
+</html>
+

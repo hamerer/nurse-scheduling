@@ -1,0 +1,73 @@
+<div label input {
+   margin-right:100px;
+}
+body {
+    font-family:sans-serif;
+}
+
+#press-button {
+    margin:4px;
+    background-color:#00ffff;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+#press-button:hover {
+    margin:4px;
+    background-color:#EFEFEF;
+    border:1px solid blue;
+    overflow:auto;
+    float:left;
+    color:red;
+}
+
+#press-button label {
+    float:left;
+    width:4.0em;
+}
+
+#press-button label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+}
+
+#ck-button {
+    margin:4px;
+    background-color:#EFEFEF;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+#ck-button:hover {
+    margin:4px;
+    background-color:#EFEFEF;
+    border:1px solid red;
+    overflow:auto;
+    float:left;
+    color:red;
+}
+
+#ck-button label {
+    float:left;
+    width:4.0em;
+}
+
+#ck-button label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+#ck-button input:checked + span {
+    background-color:#911;
+    color:#fff;
+}
+

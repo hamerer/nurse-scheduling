@@ -1,0 +1,456 @@
+@charset "big5";
+
+/* 基本樣式
+---------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	list-style: none;
+}
+body {
+	font-size: 75%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	/*\*/
+	letter-spacing: 0.05em;
+	/**/
+	color: #333333;
+	background: #FFFFFF url('http://dagula.pico.net.tw/images/leftside_bg.gif') repeat-y left top;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+.text1:focus {
+	border-color: #7F9DB9; /* 指定游標移入欄位時的框線顏色 */
+	background-color: #FFFFFF; /* 指定游標移入欄位時的欄位底色 */
+}
+.text1 {
+	border: 1px solid #CCCCCC;
+	background-color: #FFFFCC;
+	padding: 2px;
+}	
+
+/* 寬度固定的二欄式版面
+---------------------------------------------*/
+#content {
+	width: 200px;
+	margin-left: 10px;
+	padding-top: 40px;
+	border-top: 10px solid #DABF9A;
+}
+#logo {
+	position: absolute;
+	left: 0px;
+	top: 1px;
+	width: 200px;
+	border-bottom: 3px solid #CCCCCC;
+}
+/* 左邊功能欄位
+------------------------------------*/
+#globalNav {
+	position: absolute;
+	left: 0px;
+	top: 100px;
+	width: 200px;
+	border-top: 1px solid #5F5F5F;
+	background: url('http://dagula.pico.net.tw/images/leftside_bg.gif') no-repeat left bottom;
+}
+#globalNav .list {
+	margin-bottom: 20px;
+}
+#globalNav .list ul ul li {
+	margin: 5px 0 0 15px;
+	padding-left: 15px;
+	background: url(http://dagula.pico.net.tw/images/arrow.gif) left center no-repeat;
+	border-bottom: 1px solid #CCCCCC;
+}
+#globalNav h2 {
+		padding: 3px 15px;
+		color: #FFFFFF;
+		background-color: #0D7CB5;
+		background: url(http://dagula.pico.net.tw/images/list.gif) left bottom no-repeat;		
+	}
+#globalNav p {
+	padding-left: 15px;
+	color: #999999;
+}	
+#globalNav ul ul li {
+	float: none;
+	padding-left: 15px;
+	background: url('http://dagula.pico.net.tw/images/arrow.gif') no-repeat left center;
+	border-bottom: 1px solid #CCCCCC; margin-left:15px; margin-right:0; margin-top:5px; margin-bottom:0	
+}
+
+
+/* 大標題
+---------------------------------------------*/
+h1 {
+	font-size: 150%;
+	font-weight: bold;
+	border-bottom: 1px solid #CCCCCC;
+	color:#333333;
+	border-top: 2px solid #DC0101;	
+}
+
+/* 頁尾
+---------------------------------------------*/
+#footer {
+	clear: both;
+	position: relative;
+	width: 764px;
+	margin-left: 220px;
+	padding: 40px 0 30px 0;
+}
+#footer p {
+	/*position: absolute;
+	left: 0;*/
+	top: 45px;
+  text-align: center;
+  margin-top:auto;
+}
+
+A {
+  COLOR: #000000;
+  TEXT-DECORATION: none;
+  cursor: pointer;  
+}
+/*A:link
+{
+    COLOR: #000000;
+    TEXT-DECORATION: none;
+}
+A:visited
+{
+    COLOR: #000000;
+    TEXT-DECORATION: none; 
+}
+A:active
+{
+    COLOR: #000000;
+    TEXT-DECORATION: none;  
+}*/
+A:hover
+{
+    COLOR: #FF9900;
+    TEXT-DECORATION: underline;  
+}
+/* 收尋表格
+---------------------------------------------*/
+#orderForm fieldset {
+	margin-top: 10px;
+	border: 1px solid #6699FF;
+}
+#orderForm legend {
+	padding-top: 2px;
+	color: #333333;
+	font-weight: bold;
+	border: 2px solid #ccc;
+
+}
+#orderForm dl {
+	padding: 10px;
+}
+#orderForm em {
+	color: #DC0101;
+	font-style: normal;
+}
+#orderForm ul li{
+	margin: 10px;
+	padding: 10px;
+	color: #DC0101;
+	font-style: normal;
+}
+/* 收尋表格
+---------------------------------------------*/
+#orderFormGray fieldset {
+	margin-top: 10px;
+	border: 1px solid #ccc;
+}
+#orderFormGray  legend {
+	padding-top: 2px;
+	color: #333333;
+	font-weight: bold;
+	border-top: 2px solid #6699FF;
+}
+#orderFormGray  dl {
+	padding: 10px;
+}
+#orderFormGray  em {
+	color: #DC0101;
+	font-style: normal;
+}
+/*--------------------------------------*/
+#showlist table{
+  width: 780px;
+  text-align: center;
+  padding-right: 1.0em;
+}
+#showlist thead th{
+  border-bottom: 2px solid #CCCCCC;
+  background-color: #DEE9F1;  
+  padding: 0.5em; 
+}
+#showlist tbody tr{
+  background-color: #E6E6E6;
+}
+#showlist tbody tr.odd {
+  background-color: #FFFFFF;
+}
+#showlist tbody td,tbody th{
+  border-bottom: 1px dotted #aeb3b6;
+  padding: 0.2em;
+}
+#showlist tbody tr:hover {
+  background-color: #FFCC99;
+  color: #888888
+}
+#showlist tfoot tr {
+  background-color: #DEE9F1;
+}
+#showlist tfoot th {
+  border: 2px solid #CCCCCC;
+  padding: 0.5em; 
+}
+/*---------------------------------------*/
+#modifylist table{
+  width: 780px;
+  text-align: center;
+	border: 1px solid #aeb3b6;
+	border-collapse: collapse;
+}
+#modifylist thead th{
+  background-color: #333333;
+  color: #FFFFFF;
+  border-bottom: 2px solid #CCCCCC; 
+  padding: 0.5em; 
+}
+#modifylist thead th b{ 
+  color: #FFFFBB;
+}
+#modifylist tbody tr{
+  background-color: #DEE9F1;
+	line-height: 2;
+}
+#modifylist tbody tr.odd {
+  background-color: #FFFFFF;
+}
+#modifylist tbody td,tbody th{
+  border-bottom: 1px solid #aeb3b6;
+  padding: 2px;
+}
+#modifylist tbody tr:hover,tbody a:hover {
+  background-color: #FFCC99;
+  color: #888888;
+}
+#modifylist tfoot tr {
+  background-color: #333333;
+}
+#modifylist tfoot th {
+  color: #FFFFFF;
+  border: 2px solid #CCCCCC;
+  padding: 0.5em; 
+}
+#modifylist thead th a:link {
+  color: #FFFFFF;
+}
+#modifylist thead th a:visited {
+  color: #FFFFFF;
+}
+#modifylist thead th a:active {
+  color: #FFFFFF;
+}
+#modifylist thead th a:hover {
+  text-decoration: underline overline;
+  font-weight:normal;
+  color: #FFCC99;
+}
+#modifylist em {
+	color: #DC0101;
+	font-style: normal;
+}
+
+/*---------------------------------------*/
+#showGro table{
+  width: 780px;
+  text-align: center;
+	border: 1px solid #aeb3b6;
+	border-collapse: collapse;
+}
+#showGro thead th{
+  background-color: #333333;
+  color: #FFFFFF;
+  border-bottom: 2px solid #CCCCCC; 
+  padding: 0.5em; 
+}
+#showGro tbody tr{
+  background-color: #FFFFFF;
+	line-height: 1.5;
+}
+#showGro tbody td,tbody th{
+  border-bottom: 1px solid #aeb3b6;
+  padding: 2px;
+}
+#showGro tbody tr:hover,tbody a:hover {
+  background-color: #FFCC99;
+  color: #888888;
+}
+#showGro tbody tr.odd {
+  background-color: #DEE9F1;
+}
+#showGro tbody tr.two {
+  background-color: #E0D0FF;
+}
+#showGro tbody tr.three {
+  background-color: #00D0FF;
+}
+#showGro tbody td b{
+  font-style: normal;
+  color: #F000D0;
+}
+#showGro tfoot tr {
+  background-color: #333333;
+}
+#showGro tfoot th {
+  color: #FFFFFF;
+  border: 2px solid #CCCCCC;
+  padding: 0.5em; 
+}
+#showGro thead th a:link {
+  color: #FFFFFF;
+}
+#showGro thead th a:visited {
+  color: #FFFFFF;
+}
+#showGro thead th a:active {
+  color: #FFFFFF;
+}
+#showGro thead th a:hover {
+  text-decoration: underline overline;
+  font-weight:normal;
+  color: #FFCC99;
+}
+/*----------------------------------------------------*/
+.buttons a, .buttons button{
+    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+    width: 50px;
+
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:50%;
+    line-height:120%;
+    text-decoration:none;
+    font-weight:bold;
+    text-align: center;
+    color:#565656;
+    cursor:pointer;
+    padding:15px 20px 16px 17px; /* Links */
+}
+.buttons a:hover {
+  color: #FF9900;
+  background: #f8f3cb;
+}
+
+.buttons .dir {
+  background: #F0FAFF;
+}
+/*----------------------------------------------------*/
+.smallbuttons a, .smallbuttons button{
+    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+    width: 50px;
+
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:10;
+    line-height:120%;
+    text-decoration:none;
+    font-weight:bold;
+    text-align: center;
+    color:#565656;
+    cursor:pointer;
+    padding:15px 20px 16px 17px; /* Links */
+}
+.smallbuttons a:hover {
+  color: #FF9900;
+  background: #f8f3cb;
+}
+
+.smallbuttons .dir {
+  background: #F0FAFF;
+}
+/*新增的表格
+	----------------------------------------------------*/
+	#inquiry {
+		width: 750px; /* 指定區塊寬度 */
+	}
+	#inquiry table {
+		border-top: 1px solid #CCCCCC;
+		border-bottom: none;
+		border-left: none;
+		border-right: none;
+		font-size: 100%;
+		width: 100%;
+	}
+	#inquiry td {
+		border-top: none;
+		border-bottom: 1px solid #CCCCCC;
+		border-left: none;
+		border-right: none;
+		padding: 10px;
+	}
+	#inquiry td i {
+		color : #FF6600;
+    font-style: normal;    
+	}  
+  #inquiry td strong {
+    color : #1A64FF;		
+	}
+  #inquiry td em {
+    color : red;		
+	}    
+	#inquiry th {
+		border-top: none;
+		border-bottom: 1px solid #CCCCCC;
+		border-left: 6px solid #CCCCCC;
+		border-right: none;
+		background-color: #F3F3F3;
+		font-weight: normal;
+		padding: 10px;	
+		width: 200px;
+	}	
+	#inquiry th.must {
+		border-left-color: #D90000;
+    font-weight: bold;
+	}
+	#inquiry th.spe {
+		border-left-color: #FF9900;
+	}
+	#inquiry th i {
+		font-style: normal;
+		color: #FF9900;
+		padding-left: 5px;
+	}
+	#inquiry th em {
+		font-style: normal;
+		color: #FF0000;
+		padding-left: 5px;
+	}
+	#inquiry select {
+		border: 1px solid #CCCCCC;
+		background-color: #FFFFCC;
+	}
+	#inquiry .submit {
+		text-align: center;
+		margin-top: 30px;
+	}
